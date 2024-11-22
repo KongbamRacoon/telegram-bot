@@ -33,7 +33,6 @@ def run_flask():
     app.run(host='0.0.0.0', port=8080)
 
 # 메인 실행 함수
-# 메인 실행 함수
 def main():
     import os  # 환경 변수를 읽기 위한 모듈 추가
 
@@ -42,7 +41,6 @@ def main():
     
     if not BOT_TOKEN:
         raise ValueError("환경 변수 TELEGRAM_API_TOKEN이 설정되지 않았습니다.")
-
     
     # Application 객체 생성
     application = Application.builder().token(BOT_TOKEN).build()
